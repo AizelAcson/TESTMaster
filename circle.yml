@@ -2,7 +2,7 @@ deployment:
 dockerhub:
 branch: master
 commands :
-- $Docker_Hub_Trggier
+- $Docker_Hub_Trigger
 test:
 override:
 - mocha
