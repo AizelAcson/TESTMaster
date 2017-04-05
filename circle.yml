@@ -1,8 +1,8 @@
 deployment:
-  dockerhub:
-    branch: master
-    commands :
-        - $Docker_Hub_Trggier
+dockerhub:
+branch: master
+commands :
+- $Docker_Hub_Trggier
 test:
 override:
 - mocha
