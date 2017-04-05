@@ -1,9 +1,25 @@
-deployment:
-  dockerhub:
+--- 
+commands: 
+  - $Docker_Hub_Trigger
+deployment: 
   branch: master
-commands:
-    - $Docker_Hub_Trigger
-test:
-  override:
-    - ?
-      mocha
+  dockerhub: ~
+test: 
+  override: 
+    - 
+      ? 
+        - mocha
+      : ~
+
+
+
+
+
+
+
+
+
+
+
+
+
