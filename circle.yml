@@ -5,4 +5,5 @@ deployment:
         - $Docker_Hub_Trigger
 test:
 override:
-- mocha
+-mocha
+post:
