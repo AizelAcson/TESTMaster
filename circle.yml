@@ -3,6 +3,6 @@ deployment:
     branch: master
     commands :
         - $Docker_Hub_Trggier
-test 
+test:
 override:
 - mocha
