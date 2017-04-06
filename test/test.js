@@ -2,12 +2,12 @@
 'use strict';
 
 var request = require("supertest"),
-	app = require("C:\"User\"bam\"gpgkey\"Masterfolder\"app.js").getApp;
+	app = require("../app").getApp;
 
-describe('GET C:\"User\"bam\"gpgkey\"Masterfolder\"app.js', function(){
+describe('GET /', function(){
 	it('expects HTTP response 200', function(done){
 	request(app)
-	.get('C:\"User\"bam\"gpgkey\"Masterfolder\"app.js')
+	.get('/')
 	.expect(200,done);
 	});
-});
+})
