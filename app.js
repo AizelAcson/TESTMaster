@@ -1,5 +1,5 @@
 // Sample node.js
-//For demo only
+
 'use strict';
 
 var express = require('express'),
@@ -8,10 +8,10 @@ var express = require('express'),
 app.set('views', 'views');
 app.set('view engine', 'jade');
 
-app.get('/', function(req,res) {
+app.get('/', function(req, res) {
 	res.render('home',{
 	});
 });
 
 app.listen(8080);
-module.export.getApp = app;
+module.export.getApp = getApp;
